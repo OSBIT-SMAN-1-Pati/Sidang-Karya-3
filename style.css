@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #d32f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Garuda21 {
+    font-size: 25px;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 600;  
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: aqua;
+
+} 
+
+.Home {
+    height: 100vh;
+    background: url(dorr.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Home-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.Home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.Home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+} 
+
+.Home-content p {
+    font-size: 15px;
+}
+
+.Home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #d32f2f;
+    border: 2px solid #d32f2f;
+    border-radius: 8px ;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #d32f2f;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #d32f2f;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+
